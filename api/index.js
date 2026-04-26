@@ -56,7 +56,7 @@ export default async function handler(req) {
       redirect: "manual",
     });
   } catch (err) {
-    console.error("relay error:", err);
-    return new Response("Bad Gateway: Tunnel Failed", { status: 502 });
+    console.error("r_Error:", err);
+    return new Response("Bad Gateway: t_Fail", { status: 502 });
   }
 }
